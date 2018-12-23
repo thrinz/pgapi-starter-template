@@ -1,9 +1,17 @@
 const express  = require('express')
 const path     = require('path')
 const bodyParser = require('body-parser');
+const dotenv   = require('dotenv')
 const colors = require('colors');
 const pgapi = require('@thrinz/pgapi');
 
+
+// Load env variables from .env file
+dotenv.config({
+    path: path.resolve(__dirname, './config.env')
+  })   
+
+  
 const app      = express()
 app.use(bodyParser.json());
 
@@ -21,11 +29,11 @@ const installpgAPI = async (app) => {
     await pgapi.initialize({
         DB_HOST : process.env.DB_HOST || 'localhost',
         DB_USER: process.env.DB_USER || 'postgres',
-        DB_PASSWORD: process.env.DB_PASSWORD || 'Welcome1',
+        DB_PASSWORD: process.env.DB_PASSWORD || 'postgres',
         DB_NAME: process.env.DB_NAME || 'postgres',
         DB_PORT: process.env.DB_PORT || 5432,
         PGAPI_SECRET_KEY: process.env.PGAPI_SECRET_KEY || 'pgapi-secret-key',
-        DEMO_INSTALL: 'Y'
+        DEMO_INSTALL: process.env.DEMO_INSTALL || 'Y'
        });
        
     pgapi.apiRouter(router);   
