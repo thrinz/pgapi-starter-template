@@ -2,7 +2,7 @@ const express  = require('express')
 const path     = require('path')
 const bodyParser = require('body-parser');
 const colors = require('colors');
-const pgapi = require('pgapi');
+const pgapi = require('@thrinz/pgapi');
 
 const app      = express()
 app.use(bodyParser.json());
