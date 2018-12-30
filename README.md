@@ -170,13 +170,13 @@ $BODY$
 ![alt text](https://lh3.googleusercontent.com/NPrelEh58UI5S0QwyS0Te103Am8ccNPrcxckEzd1l34UsZ7xD9TQWNy4rM2BATHWBtg2GKp5YrtdDQnTlywXHfbXTAFR4nXJoPHy50DDMrEj109MsqGveSnidCPUUTiAGLHl4kYVrqCyfZTHy72D4lI9JnHzZ1ENWAue5lGXnZUx_mhbV_ChTniyR7Ejbgoz4Ja_Ct6bM607Vt9Dw7MUBbUyaTavix0FtGlXHvorSiKYc3fJrbyM2a-m57FMdSL8BelpAhFMDJdzBpFahFiapd3w34ATnZUDFlb5_rMiIrtIIOGhtjHFp_iltz1T2OdDE4QxrzxTI02KoWnsPEi-oPJMTlWhPX5yAf6BEc9W4FD4nd3FFuYF58VEFVnKM6JJsj3XqE4LnzfkVQIvYcReRkxEtYXOD_LWHEkMhy5AczODmVPUklwBuenix_ra9e7d5C5I92o-zD31wsSHCQZZwIj7fpy2RdznztZDA-uq4n2_4z-XuBSuPNLsj89K_DN7oFLwFOE1lexZ1mI1BFDWKo1zDO8zMkJxxO4NOKeNp6e99Rp4BnLaE9w3Kr_Zg1xk4AxNiWqFEYEw-_dHFV5DR6_1XSlLtxcMAuPoKOShJhSvx6by0j6tB4RwiXwEQ8rU7oFPBh2ABnIgGpeqtvNYT-nRFStkktFIGI-ncYJRRPgHE2WqhtF0PRF3i_TCXMnIuCuBc-01MYbaUicrgw=w2560-h686-no)
 ### Step 5: Testing the Route
 ***For POST Routes:***
-> curl --header "Content-Type: application/json"  --request POST --data '<JSON Data>'  <server url>/<route url created in Step 4> 
+> curl --header "Content-Type: application/json"  --request POST --data '__JSON Data__'  http://localhost:5001/**route url created in Step 4** 
 
 Example: 
 > curl --header "Content-Type: application/json"  --request POST --data '{"name":"Task1" ,"description":"Task Description 1", "priority": 1, "start_date":"2018-12-08 02:41:17","due_date":"2018-12-12 01:31:10"}'  http://localhost:5001/api/task/create
 
 ***For GET Routes:***
-> curl  <server url>/<route url created in Step 4> 
+> curl http://localhost:5001/**route url created in Step 4**
 
 Example
 > curl http://localhost:5001/api/tasks
