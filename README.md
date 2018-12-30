@@ -17,9 +17,9 @@ pgAPI is a "Database as a service" application that automatically creates the RE
 > $ docker run --name pgapi --link postgres:postgres -p 5001:3000 -e PG_USER=pgapi -e PG_HOST=postgres -e PG_PASSWORD=pgapi -e PG_DATABASE=pgapi  -e PG_PORT=5432  pgapi
 
 
-> Open the link in the Browser. http://localhost:5001/admin
-**username**: admin
-**password**: admin
+> Open the link in the Browser. http://localhost:5001/admin \
+> **username**: admin\
+> **password**: admin
 
 
 ### Using GIT
@@ -32,26 +32,27 @@ pgAPI is a "Database as a service" application that automatically creates the RE
   * Subscription on Azure  Cloud - https://azure.microsoft.com/en-us/services/postgresql/
   * Subscription on GCP - https://cloud.google.com/sql/docs/postgres/quickstart
 #### Start the Application
-> $ git clone https://github.com/thrinz/pgapi-starter-template
-> $ cd pgapi-starter-template
-> $ vi config.env from the terminal (linux or Mac) or open the config.env in a text editor. Modify the config.env file with the postgres database Information
-> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_HOST**=<Postgres Hostname>
-> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_USER**=<Postgres username>
-> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_PASSWORD**=<Postgres Database Password>
-> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_NAME**=<Postgres Database Name>
-> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_PORT**=<Port Number>
-> $ npm install
-> $ node index.js
-> &nbsp;&nbsp;&nbsp;&nbsp;The console must display log of the server to be running on port 5001 
-> Open the link in the Browser. http://localhost:5001/admin
-**username**: admin
+> $ git clone https://github.com/thrinz/pgapi-starter-template \
+> $ cd pgapi-starter-template\
+> $ vi config.env from the terminal (linux or Mac) or open the config.env in a text editor. Modify the config.env file with the postgres database Information\
+> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_HOST**=Postgres Hostname\
+> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_USER**=Postgres username\
+> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_PASSWORD**=Postgres Database Password\
+> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_NAME**=Postgres Database Name\
+> &nbsp;&nbsp;&nbsp;&nbsp;	**DB_PORT**=Port Number\
+> $ npm install\
+> $ node index.js\
+> &nbsp;&nbsp;&nbsp;&nbsp;The console must display log of the server to be running on port 5001\
+> &nbsp;&nbsp;&nbsp;&nbsp;Open the link in the Browser. http://localhost:5001/admin \
+> **username**: admin\
 **password**: admin
+
 
 
 ### Login to the Admin Portal
 
-Open the link in the Browser. http://localhost:5001/admin
-**username**: admin
+Open the link in the Browser. http://localhost:5001/admin \
+**username**: admin\
 **password**: admin
 
 ![alt text](https://lh3.googleusercontent.com/4aADPnQuVzg48nFq6ugS304gpk2kdUZUn77qWN-5JnsiZMUUkYBIX8aJvz6j_Cn-BdYOX2g1d7QPp7n-ZT3aMI6LgwdoAZscX5MNll2gk2jYQfTdzo-dEKiZBy87WIxYKU446O9JDlhX8LQ8QzTf0nXPAySceUO0qUhO_6mW-sNhVDoyQCjwtxD7TPFtb62lerhtjcWiPCvq4AJx6SfBXv9KT14A6oyz6VXil5PRWtY90V3l7IgQ2njitRTeSiCM-r_AmZy7JP8hoUaKTnstGvViIZXW18pwvSI-2XElF2MtHB_18bZmMNMohtp8jA-56M4h7AOn01Q3KdKuigV_NX1SPhiGM1gJJb7NBYAfsDN7-0qhk_9_w0qqn6IfRy3xagK9nDc_f0UhP7IR_Vy7nslI0BZudULhzbgoMFfv5-rNa71ljyX6TINl8Q5XypshMKrZLKpNFMWCOIAGRjFXHa8y7Tq6CM1nhLCseSK7XO5MDIzCgPAE8yHVbNRf4tHLOEi9zT2Rago99BexJG3mCOLmkeb4APz4xGd1Ub7xrEdUbC8-qK3cs6mmD0u4dILScvMLIkUEac-Z2uOruX_IPKsUC2PWf6aZ43re6spDl3wzUP7hSeof3QaCaMEiY8ZuacsDOTarVV6wtvba8gyAnewJbR3Y7cS3DDnuR4QHmgmDuWbinpAYYVkvAZcNS_qtgigMxFM5ufuygn09WQ=w1514-h896-no)
