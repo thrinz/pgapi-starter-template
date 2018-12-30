@@ -520,7 +520,7 @@ Let us create a Tasks Demo Application
      * _Route Method_ – GET
      * _Route URL_ - /api/task/:id
      * _Function Name_ – Select Task Function
-> After setting up all the functions , the UI must look something like the below image.
+> After setting up all the routes , the UI must look something like the below image.
 
 ![alt text](https://lh3.googleusercontent.com/5j-Kb9KfToni64hphivDG1cz5LmQMRWRRmhuwAOPkBd55y5VEd9rNQqpyWcuJaWsaAQVIP63M6IH6ux78J3T5Hm-UN3C5zulSICbh8Rq02agz8lAeAtD1wanq5iGJqCbgWtQV0ssg0m1BeL2rLZ9uMCEDSlY6DVj1Nz2PapEIcf8Wo6JSUPXTfxM7Jb9W6yToRS2S24C7rH9M9eBKnsKFOUpkgbE71Ic_5y8ap0ieagQ9o67rcZcKo_DuEt92uo3d82LWto6SEYU0EGrdn3Jg67KPuxiVsRTD9S4ayxtqMEF02nVuF7oI8cdGBZg7yrCutHoDieIVbUNg4T3MjoqKru6QIn3sS_HEjX46-PNlzepmtW4hsnd4rwXRvm8Lwdxnwk1BKF0zdCi9a2hjqdSM_6oVIrzb_ruWjwUCIOX3mHPZ3CMGdtK9dA_xHaXMDyZovE6t3djl5LvvTqv3uOFdy9YkVfSs8vCdmQkrQIqEjhJmJtyeDs_zL6KNOnvpoOJ1YajH1VKfRDSHzp1IQ7eXKKSukiUDrA3nznlwSs2_TjOACFLcGOoOshSSoGO9H2BtfX-kfn3B8H1A1Rj9g8ezPsP0k1tTCh7slE21ZnFHSvelhajIYEz8MLY9FC0_OV4pOjNEY3Nrw6H0PL8aaRtW3ZX_ub7SEbyUV8ypqvkO45UDyG3PdSCKsZCb8WMxmWySZEBIhoTDKJ1GAaT1A=w2726-h1280-no)
  * Testing the Routes
