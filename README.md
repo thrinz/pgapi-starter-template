@@ -182,15 +182,15 @@ Example
 ## Sample Demo Application[Tasks]
 Let us create a Tasks Demo Application
 * Create a Connection – Instruction to Create Function is description in Step 3
-  * _Connection Name_ – <Unique Connection Name> (Ex: default-connection) 
-  * _Host(or ip address)_ - <host or ip address of the database>
-  * _Port#_ - <database port number>
-  * _Username_ - <database username>
-  * _Password_ - <database password>
-  * _Database_ - <database name>
+  * _Connection Name_ – Unique Connection Name (Ex: default-connection) 
+  * _Host(or ip address)_ - host or ip address of the database
+  * _Port#_ - database port number
+  * _Username_ - database username
+  * _Password_ - database password
+  * _Database_ - database name
 * Create the Database Functions and Tables using Postgres Client like pgAdmin 4. Make sure to use the same database crendentials as mentioned in Step 1
   * Table Creation Script
-    ```
+    ```sql
       CREATE TABLE IF NOT EXISTS tasks (
       id uuid NOT NULL,
       name text NOT NULL,
@@ -204,7 +204,7 @@ Let us create a Tasks Demo Application
     ```
 
   * Create_Task
-    ```
+    ```sql
       CREATE OR REPLACE FUNCTION create_task ( p_data json)
       RETURNS json AS
       $BODY$ 
@@ -264,7 +264,7 @@ Let us create a Tasks Demo Application
       LANGUAGE plpgsql;
     ```
   * Create_Bulk_Tasks
-    ```
+    ```sql
       CREATE OR REPLACE FUNCTION create_bulk_tasks ( p_data json)
       RETURNS json AS
       $BODY$ 
@@ -338,7 +338,7 @@ Let us create a Tasks Demo Application
       LANGUAGE plpgsql;
     ```
   * Delete_Task
-    ```
+    ```sql
       CREATE OR REPLACE FUNCTION delete_task ( p_data json)
       RETURNS json AS
     $BODY$ 
@@ -371,7 +371,7 @@ Let us create a Tasks Demo Application
     LANGUAGE plpgsql; 
     ```
   * Select_Task
-    ```
+    ```sql
       CREATE OR REPLACE FUNCTION select_task ( p_data json)
       RETURNS json AS
       $BODY$ 
@@ -413,7 +413,7 @@ Let us create a Tasks Demo Application
       LANGUAGE plpgsql; 
     ```
   * Update_Task
-    ```
+    ```sql
       CREATE OR REPLACE FUNCTION update_task ( p_data json)
       RETURNS json AS
       $BODY$ 
