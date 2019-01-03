@@ -180,8 +180,8 @@ Example:
 
 Example
 > curl http://localhost:5001/api/tasks
-## Sample Demo Application[Tasks]
-Let us create a Tasks Demo Application
+## Sample "Todo List" Demo Application
+Let us create a Todo List Demo Application
 * Create a Connection – Instruction to Create Function is description in Step 3
   * _Connection Name_ – Unique Connection Name (Ex: default-connection) 
   * _Host(or ip address)_ - host or ip address of the database

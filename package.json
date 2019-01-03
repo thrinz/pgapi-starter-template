@@ -1,15 +1,16 @@
 {
   "name": "pgapi-starter-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a sample Node App to demostrate pgapi npm module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Praveen Muralidhar (thrinz@gmail.com)",
   "license": "MIT",
   "dependencies": {
-    "@thrinz/pgapi": "1.0.2",
+    "@thrinz/pgapi": "1.0.3",
     "body-parser": "^1.18.3",
     "colors": "^1.3.3",
     "dotenv": "^6.2.0",
