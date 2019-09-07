@@ -35,7 +35,13 @@ router.use(async function (req, res, next) {
   res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization');
 
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  next();
+  if ('OPTIONS' == req.method) {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
+
+  // next();
 });
 
 const installpgAPI = async (app) => {
